@@ -59,6 +59,19 @@ img{max-width:100%;display:block}
 .namebar .l{color:var(--ox);font-weight:600;white-space:nowrap}
 .namebar .r{color:var(--mute);white-space:nowrap}
 .namebar .line{flex:1;height:1px;background:var(--rule)}
+@media(max-width:620px){
+  .namebar{flex-direction:column;gap:8px;text-align:center;font-size:11px;letter-spacing:.2em}
+  .namebar .line{width:60px;flex:0 0 auto}
+  .namebar .l,.namebar .r{white-space:normal}
+  .hero{padding:34px 0 40px}
+  .wrap{padding:0 20px}
+  .ctarow .btn{width:100%;text-align:center}
+  .stats div{min-width:50%;border-left:0;border-top:1px solid var(--rule)}
+  .stats div:nth-child(-n+2){border-top:0}
+  .stats div:nth-child(even){border-left:1px solid var(--rule)}
+  section{padding:48px 0}
+  .secnum{font-size:34px}
+}
 .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5.4vw,60px);
  line-height:1.04;letter-spacing:-.02em;max-width:900px;margin:26px auto 22px;text-align:center}
 .hero .sub{max-width:720px;margin:0 auto 30px;text-align:center;font-size:19.5px;color:var(--ink2);line-height:1.6}
