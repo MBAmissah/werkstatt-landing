@@ -3,245 +3,390 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Was Ihnen keine Werkstatt sagt · Klaus, Kfz-Meister</title>
+<title>Was Ihnen keine Werkstatt sagt · 109 Regeln von einem Kfz-Meister</title>
 <meta name="description" content="109 Regeln, mit denen Ihr Auto deutlich länger hält. Was wirklich hilft, was nichts bringt, und wofür Sie eine Werkstatt nicht bezahlen müssen. Von einem Kfz-Meister mit eigener Werkstatt.">
 <meta property="og:title" content="Was Ihnen keine Werkstatt sagt">
 <meta property="og:description" content="109 Regeln von einem Kfz-Meister. Was wirklich hilft, was nichts bringt, und wofür Sie mich nicht bezahlen müssen.">
 <meta property="og:image" content="cover.jpg">
 <meta property="og:type" content="website">
-<!-- META PIXEL: kein Dataset für dieses Produkt angelegt. ID hier eintragen, dann die 3 fbq-Zeilen aktivieren.
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- META PIXEL: noch kein Dataset. ID eintragen und den Block aktivieren.
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/de_DE/fbevents.js');
-fbq('init','PIXEL_ID_HIER');
-fbq('track','PageView');
-fbq('track','ViewContent',{content_name:'Werkstatt landing',content_ids:['8524244'],content_type:'product'});
-var SRC=new URLSearchParams(location.search).get('src')||'direct';
-document.addEventListener('click',function(e){var a=e.target.closest('a.btn');
-if(a)fbq('track','InitiateCheckout',{content_ids:['8524244'],content_type:'product',content_category:SRC});});
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;
+n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/de_DE/fbevents.js');
+fbq('init','PIXEL_ID_HIER');fbq('track','PageView');
+fbq('track','ViewContent',{content_ids:['8524244'],content_type:'product'});
+document.addEventListener('click',function(e){if(e.target.closest('a.btn'))
+fbq('track','InitiateCheckout',{content_ids:['8524244'],content_type:'product'});});
 </script>
 -->
 <style>
 :root{
-  --night:#10161d; --night2:#182330; --panel:#F7F5F0; --panel2:#EFEBE2;
-  --ink:#161B21; --soft:#54606C; --rule:#DCD6C9;
-  --gold:#C8A24A; --gold2:#E0BE6B; --gtint:#FAF3E2;
-  --red:#A8402C; --rtint:#FBF0ED; --green:#2C5C2A; --gnt:#EAF2E8;
-  --steel:#41505F; --stint:#ECEFF2;
-  --serif:"Iowan Old Style",Palatino,Georgia,"Times New Roman",serif;
-  --sans:"Avenir Next",Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --paper:#F4F1E8; --paper2:#EAE5D6; --paper3:#FBF9F4;
+  --night:#0E141A; --night2:#18232F; --night3:#22303E;
+  --ink:#131A21; --ink2:#3A4650; --mute:#6B7885; --rule:#D5CDB9;
+  --gold:#C08B2E; --gold2:#E0B15A; --gold3:#F6EDD8;
+  --ox:#8C2F1C; --oxt:#FAEFEC; --sage:#3C5B3A; --saget:#EDF3EC;
+  --container:1180px;
+  --serif:"Fraunces","Iowan Old Style",Palatino,Georgia,serif;
+  --sans:"Inter","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono","IBM Plex Mono",ui-monospace,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:19px;line-height:1.55}
-.wrap{max-width:720px;margin:0 auto;padding:0 22px}
-img{max-width:100%}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 28px}
+.narrow{max-width:760px;margin:0 auto}
 
-.hero{background:linear-gradient(168deg,#10161d,#1b2735 60%,#0c1218);color:#F2EFE9;padding:50px 0 44px;border-bottom:6px solid var(--gold)}
-.hero .wrap{max-width:1120px}
-.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:46px;align-items:center}
-.kicker{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);margin-bottom:16px;font-weight:600}
-h1{font-family:var(--serif);font-weight:700;font-size:clamp(32px,6.3vw,48px);line-height:1.06;margin-bottom:18px}
-.hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(19px,3.2vw,23px);line-height:1.42;color:#D6DEE6;margin-bottom:22px}
-.hero .meta{font-size:15px;color:#9FB0BF;margin-bottom:22px}
-.price{font-family:var(--serif);font-size:36px;margin:18px 0 14px}
-.price .tag{font-size:13.5px;font-family:var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);display:block;margin-top:2px;border:0;background:none;padding:0;font-weight:600}
-.btn{display:block;text-align:center;background:var(--gold);color:#16130B;text-decoration:none;font-weight:700;font-size:21px;padding:18px 26px;border-radius:13px;box-shadow:0 10px 26px rgba(0,0,0,.34);transition:transform .12s,background .12s}
-.btn:hover{transform:translateY(-2px);background:var(--gold2)}
-.btn small{display:block;font-weight:400;font-size:14px;opacity:.82;margin-top:3px}
-.bookcard{background:linear-gradient(170deg,#1b2735,#0c1218);border-radius:14px;padding:12px;box-shadow:0 26px 60px rgba(0,0,0,.55)}
-.bookcard .inner{border:1.5px solid rgba(224,190,107,.5);border-radius:10px;padding:16px 16px 18px}
-.bookcard img{width:100%;border-radius:7px;display:block;margin-bottom:14px}
-.bookcard .q{font-family:var(--serif);font-style:italic;font-size:16.5px;line-height:1.45;color:#E8E3DA;background:rgba(0,0,0,.3);border-radius:9px;padding:14px 16px}
-.bookcard .q small{display:block;font-family:var(--sans);font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-top:9px}
-@media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:28px}.bookcard{max-width:420px;margin:0 auto}}
+/* ---------- top bar ---------- */
+.topbar{background:var(--night);color:var(--gold2);font-family:var(--mono);font-size:12px;
+ letter-spacing:.2em;text-transform:uppercase;padding:11px 0;text-align:center}
+.topbar b{color:#F2EFE9;font-weight:500}
 
-section{padding:44px 0}
-.alt{background:var(--panel2)}
-h2{font-family:var(--serif);font-size:clamp(26px,5vw,34px);line-height:1.16;margin-bottom:8px}
-h3{font-family:var(--serif);font-size:21px;margin:22px 0 8px}
+/* ---------- hero ---------- */
+.hero{background:var(--paper);padding:52px 0 56px}
+.frame{max-width:520px;margin:0 auto;background:var(--paper3);padding:14px;
+ border:1px solid var(--rule);box-shadow:0 30px 60px -22px rgba(19,26,33,.34)}
+.frame img{border:1px solid rgba(19,26,33,.12)}
+.namebar{max-width:900px;margin:30px auto 0;display:flex;align-items:center;gap:20px;
+ font-family:var(--mono);font-size:12.5px;letter-spacing:.26em;text-transform:uppercase}
+.namebar .l{color:var(--ox);font-weight:600;white-space:nowrap}
+.namebar .r{color:var(--mute);white-space:nowrap}
+.namebar .line{flex:1;height:1px;background:var(--rule)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5.4vw,60px);
+ line-height:1.04;letter-spacing:-.02em;max-width:900px;margin:26px auto 22px;text-align:center}
+.hero .sub{max-width:720px;margin:0 auto 30px;text-align:center;font-size:19.5px;color:var(--ink2);line-height:1.6}
+.hero .sub b{color:var(--ink)}
+.ctarow{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:38px}
+.btn{display:inline-block;background:var(--night);color:#F2EFE9;text-decoration:none;
+ font-weight:600;font-size:16px;letter-spacing:.09em;text-transform:uppercase;
+ padding:17px 30px;border:1px solid var(--night);transition:.14s;font-family:var(--sans)}
+.btn:hover{background:var(--night2);transform:translateY(-1px)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#17120A}
+.btn.gold:hover{background:var(--gold2)}
+.btn.ghost{background:transparent;color:var(--night);border-color:var(--night)}
+.btn.ghost:hover{background:var(--night);color:#F2EFE9}
+.btn.lg{font-size:18px;padding:20px 40px}
+.stats{display:flex;justify-content:center;gap:0;flex-wrap:wrap;border-top:1px solid var(--rule);
+ border-bottom:1px solid var(--rule);max-width:860px;margin:0 auto}
+.stats div{flex:1;min-width:150px;text-align:center;padding:20px 12px;border-left:1px solid var(--rule)}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font-family:var(--serif);font-size:27px;font-weight:600;line-height:1}
+.stats span{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--mute);margin-top:7px}
+
+/* ---------- sections ---------- */
+section{padding:72px 0}
+.dark{background:var(--night);color:#EDE9E0}
+.dark h2,.dark h3{color:#F6F3EC}
+.dark .secnum{color:var(--gold2)}
+.dark .kick{color:var(--gold2)}
+.tint{background:var(--paper2)}
+.secnum{font-family:var(--serif);font-size:44px;font-weight:600;color:var(--gold);
+ line-height:1;margin-bottom:6px}
+.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;
+ color:var(--ox);margin-bottom:14px;font-weight:600}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,4.2vw,42px);line-height:1.1;
+ letter-spacing:-.015em;margin-bottom:14px}
+h3{font-family:var(--serif);font-weight:600;font-size:22px;line-height:1.25;margin-bottom:8px}
+.dek{font-size:19.5px;color:var(--ink2);max-width:680px;margin-bottom:8px}
+.dark .dek{color:#B4C0CB}
+.hr{height:1px;background:var(--rule);margin:26px 0 30px}
+.dark .hr{background:#2C3B4A}
 p{margin-bottom:16px}
-.lead{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--soft);line-height:1.45;margin-bottom:18px}
-.rule{height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:6px 0 22px}
+.lead{font-family:var(--serif);font-size:25px;line-height:1.42;color:var(--ink);margin-bottom:20px}
+.dark .lead{color:#F6F3EC}
+
+/* ---------- book block ---------- */
+.bookgrid{display:grid;grid-template-columns:380px 1fr;gap:56px;align-items:start;margin-top:34px}
+.bookgrid .cov{box-shadow:0 30px 60px -20px rgba(0,0,0,.55)}
+@media(max-width:900px){.bookgrid{grid-template-columns:1fr;gap:30px}.bookgrid .cov{max-width:320px;margin:0 auto}}
+.included{border-top:1px solid #2C3B4A;margin-top:20px}
+.included .row{display:flex;gap:18px;padding:15px 0;border-bottom:1px solid #2C3B4A;align-items:baseline}
+.included .row b{font-family:var(--serif);font-size:19px;font-weight:600;flex:0 0 auto}
+.included .row span{color:#AEBAC6;font-size:16.5px}
+.pricebox{margin-top:26px;padding:24px;background:#16222E;border:1px solid #2C3B4A}
+.pricebox .p{font-family:var(--serif);font-size:52px;font-weight:600;line-height:1}
+.pricebox .n{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+ color:#9AA8B5;margin:8px 0 18px}
+
+/* ---------- the maths table ---------- */
+.mathgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:32px}
+@media(max-width:860px){.mathgrid{grid-template-columns:1fr}}
+.mcol{background:var(--paper3);border:1px solid var(--rule)}
+.mcol.bad{border-top:4px solid var(--ox)}
+.mcol.good{border-top:4px solid var(--sage)}
+.mcol .h{padding:16px 22px;border-bottom:1px solid var(--rule);font-family:var(--mono);
+ font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.mcol.bad .h{color:var(--ox);background:var(--oxt)}
+.mcol.good .h{color:var(--sage);background:var(--saget)}
+.mcol .i{padding:15px 22px;border-bottom:1px solid #E7E1D1;font-size:16.5px;line-height:1.5}
+.mcol .i:last-child{border-bottom:0}
+.mcol .i b{display:block;font-weight:600;margin-bottom:2px}
+.mcol .i span{color:var(--mute)}
+.mnote{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--mute);
+ margin-top:18px;text-align:center}
+
+/* ---------- chapters ---------- */
+.chaps{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px}
+@media(max-width:860px){.chaps{grid-template-columns:1fr}}
+.chap{background:var(--paper3);border:1px solid var(--rule);padding:24px 26px}
+.chap .n{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+ color:var(--gold);font-weight:600;margin-bottom:8px}
+.chap h3{margin-bottom:10px}
+.chap ul{list-style:none}
+.chap li{font-size:16px;line-height:1.45;padding:6px 0 6px 18px;position:relative;color:var(--ink2);
+ border-bottom:1px dotted #E2DBC8}
+.chap li:last-child{border-bottom:0}
+.chap li::before{content:"·";position:absolute;left:4px;color:var(--gold);font-weight:700}
+
+/* ---------- badges ---------- */
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 6px}
+.badge{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+ font-weight:600;padding:7px 13px;border:1.5px solid}
+.badge.b{background:var(--saget);color:var(--sage);border-color:#B7CDB4}
+.badge.w{background:var(--gold3);color:#7A5510;border-color:#E3C98F}
+.badge.e{background:#ECEFF2;color:#41505F;border-color:#CBD3DA}
+.quote{font-family:var(--serif);font-size:24px;line-height:1.45;border-left:3px solid var(--gold);
+ padding-left:24px;margin:28px 0}
+
+/* ---------- lists ---------- */
+ul.checks{list-style:none;margin:20px 0}
+ul.checks li{padding:12px 0 12px 32px;position:relative;border-bottom:1px solid var(--rule);font-size:17.5px;line-height:1.5}
+ul.checks li::before{content:"→";position:absolute;left:0;top:12px;color:var(--gold);font-weight:700}
+.dark ul.checks li{border-bottom-color:#2C3B4A}
+.bonus{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+@media(max-width:760px){.bonus{grid-template-columns:1fr}}
+.bonus div{background:var(--paper3);border:1px solid var(--rule);padding:24px 26px}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
+@media(max-width:760px){.who{grid-template-columns:1fr}}
+.who div{padding:24px 26px;border:1px solid}
+.who .y{background:var(--saget);border-color:#B7CDB4}
+.who .n{background:var(--oxt);border-color:#E3BCB2}
+.who ul{list-style:none}.who li{padding:7px 0 7px 24px;position:relative;font-size:16.5px;line-height:1.45}
+.who .y li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:700}
+.who .n li::before{content:"✕";position:absolute;left:0;color:var(--ox);font-weight:700}
+.panel{border:1.5px solid var(--ox);background:var(--oxt);padding:26px 28px;margin-top:30px}
+.panel h3{color:var(--ox)}
+.gpanel{border:1.5px solid var(--night);background:var(--paper3);padding:26px 28px;margin-top:30px}
+.faq dt{font-family:var(--serif);font-size:20px;font-weight:600;margin-top:22px}
+.faq dd{margin-left:0;color:var(--ink2)}
+.foot{background:var(--night);color:#8B99A6;padding:44px 0 64px;font-size:14px}
+.foot a{color:#AEBAC6}
 .center{text-align:center}
-
-ul.checks{list-style:none;margin:18px 0}
-ul.checks li{padding:9px 0 9px 30px;position:relative;border-bottom:1px dotted var(--rule)}
-ul.checks li::before{content:"✓";position:absolute;left:2px;top:9px;color:var(--gold);font-weight:700}
-.chapters{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin:18px 0;font-size:17px}
-.chapters div{padding:9px 0 9px 28px;position:relative;border-bottom:1px dotted var(--rule);line-height:1.34}
-.chapters div::before{content:"›";position:absolute;left:6px;top:8px;color:var(--gold);font-weight:700}
-@media(max-width:700px){.chapters{grid-template-columns:1fr}}
-
-.samples{margin:20px 0}
-.samples .s{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--gold);border-radius:10px;padding:15px 18px;margin-bottom:12px}
-.samples .s b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:4px}
-.samples .s span{color:var(--soft);font-size:17px}
-
-.tags{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 8px}
-.tag{font-size:12px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;padding:5px 10px;border-radius:7px;border:1.5px solid}
-.tag.b{background:var(--gnt);color:var(--green);border-color:#B9D4B4}
-.tag.w{background:var(--gtint);color:#7A5510;border-color:#E8CF99}
-.tag.e{background:var(--stint);color:var(--steel);border-color:#CCD3DA}
-
-.honest{background:var(--rtint);border:2px solid var(--red);border-radius:16px;padding:22px 24px;margin:26px 0}
-.honest h3{margin-top:0;color:var(--red)}
-.guarantee{background:var(--stint);border:2px solid var(--steel);border-radius:16px;padding:22px 24px;margin:26px 0}
-.guarantee h3{margin-top:0}
-.quote{font-family:var(--serif);font-style:italic;font-size:23px;line-height:1.45;border-left:4px solid var(--gold);padding-left:20px;margin:26px 0}
-.bonus{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
-.bonus div{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px 20px}
-.bonus b{font-family:var(--serif);font-size:19px;display:block;margin-bottom:6px}
-@media(max-width:700px){.bonus{grid-template-columns:1fr}}
-.faq p{margin-bottom:18px}
-.faq b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:3px}
-.sig{font-family:var(--serif);font-style:italic;font-size:21px;margin-top:16px}
-.who{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
-.who div{border-radius:12px;padding:18px 20px}
-.who .yes{background:var(--gnt);border:1.5px solid #B9D4B4}
-.who .no{background:var(--rtint);border:1.5px solid #EDBDB5}
-.who b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:8px}
-.who ul{list-style:none} .who li{padding:5px 0 5px 20px;position:relative;font-size:17px;line-height:1.35}
-.who .yes li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
-.who .no li::before{content:"✕";position:absolute;left:0;color:var(--red);font-weight:700}
-@media(max-width:700px){.who{grid-template-columns:1fr}}
-.foot{padding:32px 0 60px;font-size:13.5px;color:var(--soft);border-top:1px solid var(--rule)}
-.foot a{color:var(--soft)}
-.cta-band{background:var(--night);color:#F2EFE9;padding:44px 0}
-.cta-band h2{color:#F2EFE9}
-.cta-band .wrap{max-width:560px}
 </style>
 </head>
 <body>
 
+<div class="topbar">Sofortiger Download · <b>115 Seiten</b> · 15 Tage Geld zurück</div>
+
 <div class="hero">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="kicker">Klaus · Kfz-Meister · Eigene Werkstatt</div>
-        <h1>Ich repariere Autos. Hier steht, wofür Sie mich nicht bezahlen müssen.</h1>
-        <div class="sub">109 Regeln, mit denen Ihr Auto deutlich länger hält. Was wirklich hilft, was nichts bringt, und wann sich die Werkstatt tatsächlich lohnt.</div>
-        <div class="meta">Sofortiger Download als PDF · 115 Seiten · 2 Beigaben zum Ausdrucken · 15 Tage Geld zurück</div>
-        <div class="price">19,99 €<span class="tag">inkl. MwSt. · einmalig, kein Abo</span></div>
-        <a class="btn" href="https://pay.hotmart.com/V107619143J">Buch jetzt herunterladen<small>Sicherer Checkout über Hotmart</small></a>
-      </div>
-      <div class="bookcard">
-        <div class="inner">
-          <img src="cover.jpg" alt="Was Ihnen keine Werkstatt sagt">
-          <div class="q">"Jeder Eintrag, in dem steht: das können Sie selbst, ist ein Auftrag, den ich nicht bekomme. Ich weiß, was ich mir damit aufschreibe."<small>Aus dem Vorwort</small></div>
-        </div>
-      </div>
+    <div class="frame"><img src="klaus.jpg" alt="Klaus, Kfz-Meister, in seiner Werkstatt"></div>
+    <div class="namebar"><span class="l">Klaus</span><span class="line"></span><span class="r">Kfz-Meister · Eigene Werkstatt</span></div>
+    <h1>Ich repariere Autos. Hier steht, wofür Sie mich nicht bezahlen müssen.</h1>
+    <div class="sub"><b>109 Regeln, mit denen Ihr Auto deutlich länger hält.</b> Was wirklich hilft, was nichts bringt, und wann sich die Werkstatt tatsächlich lohnt. Bei jedem Eintrag steht dabei, wie sicher die Sache ist.</div>
+    <div class="ctarow">
+      <a class="btn gold lg" href="https://pay.hotmart.com/V107619143J">Das Buch ansehen</a>
+      <a class="btn ghost lg" href="#rechnung">Erst die Rechnung sehen</a>
+    </div>
+    <div class="stats">
+      <div><b>109</b><span>Regeln</span></div>
+      <div><b>8</b><span>Kapitel</span></div>
+      <div><b>115</b><span>Seiten</span></div>
+      <div><b>15</b><span>Tage Geld zurück</span></div>
     </div>
   </div>
 </div>
 
-<section>
+<!-- I. DAS BUCH -->
+<section class="dark">
   <div class="wrap">
-    <h2>Der eine Satz, um den sich alles dreht</h2><div class="rule"></div>
-    <p class="lead">Lange Wartungsintervalle sind nicht das, was Motoren tötet. Kaltes, mit Kraftstoff verdünntes, verschmutztes Öl ist es.</p>
-    <p>Jedes dokumentierte Fahrzeug jenseits der 800.000 Kilometer hat eines gemeinsam: es wurde häufiger gewartet, als der Hersteller verlangt hat. Nur ist die Begründung dafür nicht die, die überall steht.</p>
-    <p>Die meisten Autofahrer geben jedes Jahr Geld für Maßnahmen aus, die in Messungen nichts bewirkt haben, während der eine Vorgang, der ihren Motor tatsächlich verschleißt, jeden Morgen unbemerkt abläuft. Dieses Buch räumt damit auf.</p>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <h2>Was drin ist</h2><div class="rule"></div>
-    <ul class="checks">
-      <li><b>109 Einträge</b> in acht Kapiteln, jeder mit einer klaren Handlungsanweisung</li>
-      <li>Ein Eintrag ist in <b>anderthalb Minuten gelesen</b>, und danach wissen Sie, was Sie anders machen</li>
-      <li>Bei jedem Eintrag steht, <b>wie sicher die Sache ist</b></li>
-      <li>Ein eigenes Kapitel über <b>Maßnahmen, die nichts bringen</b></li>
-      <li>Ein Kapitel über <b>die Werkstatt selbst</b>, geschrieben von dem Mann, der die Rechnung schreibt</li>
-      <li>Bei jedem Selbsthilfe-Eintrag steht, <b>ab wann Sie aufhören müssen</b></li>
-    </ul>
-    <div class="chapters">
-      <div>Kaltstart und Öl: der größte Hebel</div>
-      <div>Das Kurzstreckenproblem</div>
-      <div>Sprit und die Geldmythen</div>
-      <div>Diesel überleben</div>
-      <div>Getriebe, Riemen, Kette, Kühlung</div>
-      <div>Was Autos tötet, bevor der Motor stirbt</div>
-      <div>Die ehrlichen Kapitel</div>
-      <div>Selbst machen und überleben</div>
+    <div class="secnum">I.</div>
+    <div class="kick">Das Buch</div>
+    <h2>Ein Buch. Hundertneun Regeln. Acht Kapitel.</h2>
+    <div class="dek">Jeder Eintrag ist in etwa anderthalb Minuten gelesen, und danach wissen Sie genau, was Sie anders machen. Keine Theorie, keine Motorenkunde, keine Geschichten aus der Werkstatt.</div>
+    <div class="bookgrid">
+      <img class="cov" src="cover.jpg" alt="Was Ihnen keine Werkstatt sagt">
+      <div>
+        <h3>Was Ihnen keine Werkstatt sagt</h3>
+        <p style="color:#B4C0CB">Kaltstart und Öl. Kurzstrecke. Sprit und die Geldmythen. Diesel. Getriebe, Riemen, Kette, Kühlung. Rost, Elektrik und Bremsen. Die ehrlichen Kapitel. Selbst machen und der Notfall.</p>
+        <div class="included">
+          <div class="row"><b>Das Buch</b><span>109 nummerierte Regeln, 8 Kapitel, 115 Seiten, PDF</span></div>
+          <div class="row"><b>Warnleuchten-Notfallblatt</b><span>Alle Kontrollleuchten in drei Gruppen, eine Seite zum Ausdrucken</span></div>
+          <div class="row"><b>Handschuhfachkarte</b><span>Intervalle vorn, Notfallabläufe hinten, zum Ausschneiden</span></div>
+          <div class="row"><b>Anhang</b><span>Motorenliste, Wartungstabelle, dokumentierte Fahrzeuge</span></div>
+        </div>
+        <div class="pricebox">
+          <div class="p">19,99 €</div>
+          <div class="n">inkl. MwSt. · einmalig · kein Abo</div>
+          <a class="btn gold lg" href="https://pay.hotmart.com/V107619143J" style="display:block;text-align:center">Buch jetzt herunterladen</a>
+          <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#9AA8B5;margin-top:14px;text-align:center">Sofortiger Zugang · Sicherer Checkout über Hotmart</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- II. DIE RECHNUNG -->
+<section id="rechnung">
   <div class="wrap">
-    <h2>Ein paar Beispiele aus dem Buch</h2><div class="rule"></div>
-    <div class="samples">
-      <div class="s"><b>Muss ein moderner Motor im Stand warmlaufen?</b><span>Nein. BMW, Mercedes und VW verbieten es in ihren eigenen Betriebsanleitungen. Warum es dem Motor schadet statt zu helfen, und was stattdessen zu tun ist.</span></div>
-      <div class="s"><b>Der Eco-Knopf</b><span>Mit einem Durchflussmesser gemessen, der bis auf den Kubikzentimeter auflöst: kein Vorteil, weder in der Stadt noch auf der Autobahn. Warum das so ist.</span></div>
-      <div class="s"><b>Ein steigender Ölstand ist der Alarm, nicht ein fallender</b><span>Der wichtigste Eintrag für jeden, der Diesel und Kurzstrecke fährt. Was da wirklich in Ihr Öl läuft.</span></div>
-      <div class="s"><b>Im Leerlauf ausrollen, um Sprit zu sparen</b><span>Genau verkehrt herum, und zwar seit der elektronischen Einspritzung. Am Vergaser hat es tatsächlich gestimmt.</span></div>
-      <div class="s"><b>Nie nachtanken, nachdem die Zapfpistole abgeschaltet hat</b><span>Die sparsam wirkende Angewohnheit, deren Rechnung Jahre später kommt und nach etwas ganz anderem aussieht.</span></div>
-      <div class="s"><b>Wofür Sie mich bezahlen sollten</b><span>Die kurze Liste der Arbeiten, bei denen die Werkstatt ihr Geld wert ist, und alles andere, das Sie sich sparen können.</span></div>
+    <div class="secnum">II.</div>
+    <div class="kick">Die Rechnung</div>
+    <h2>Wo das Geld tatsächlich hingeht.</h2>
+    <div class="dek">Links steht, was es kostet, wenn man es nicht weiß. Rechts steht, was im Buch dazu steht. Jede Zeile ist ein eigener Eintrag.</div>
+    <div class="mathgrid">
+      <div class="mcol bad">
+        <div class="h">Was es kostet, wenn man es nicht weiß</div>
+        <div class="i"><b>Ein neuer Partikelfilter</b><span>weil niemand den Differenzdrucksensor geprüft hat, der ihn kaputtregeneriert. Größenordnung 2.000 €.</span></div>
+        <div class="i"><b>Zwei Stunden Diagnose extra</b><span>weil der Fehler beim Termin nicht auftrat und erst nachgestellt werden musste.</span></div>
+        <div class="i"><b>Zündkerzen und Zündspulen</b><span>für Symptome, die in Wahrheit vom gewohnheitsmäßig überfüllten Tank kamen.</span></div>
+        <div class="i"><b>Die zweite neue Batterie</b><span>weil beim ersten Mal niemand den Ruhestrom gemessen hat.</span></div>
+        <div class="i"><b>Bremsscheiben, zweimal</b><span>weil der festsitzende Sattel die Ursache war und nur die Scheibe getauscht wurde.</span></div>
+        <div class="i"><b>Jahr für Jahr: Additive, Super im 95er, der Eco-Knopf</b><span>drei Posten, die in Messungen nichts bewirkt haben.</span></div>
+      </div>
+      <div class="mcol good">
+        <div class="h">Was im Buch dazu steht</div>
+        <div class="i"><b>Eintrag 46</b><span>Warum ein Sensor für 80 € einen Filter für 2.000 € zerstören kann, ohne einen Fehlercode abzulegen. Und was Sie vor dem Filtertausch fragen.</span></div>
+        <div class="i"><b>Eintrag 90</b><span>Die fünf Fragen, die Sie vor dem Termin schriftlich beantworten. Diagnose wird nach Zeit berechnet.</span></div>
+        <div class="i"><b>Eintrag 39</b><span>Beim ersten Klicken der Zapfpistole aufhören. Warum die Folgen wie schlechte Zündkerzen aussehen.</span></div>
+        <div class="i"><b>Eintrag 67</b><span>Ruhestrom messen lassen, bevor Sie eine Batterie kaufen. Eine offene Heckklappe leert manche Autos in fünf Tagen.</span></div>
+        <div class="i"><b>Eintrag 72</b><span>Autos mit wenig Kilometern ruinieren Bremsen schneller. Den Sattel instand setzen, nicht nur die Scheibe.</span></div>
+        <div class="i"><b>Kapitel 7</b><span>Die vollständige Liste dessen, was nichts bringt. Sechs Posten, die Sie streichen können.</span></div>
+      </div>
+    </div>
+    <div class="mnote">Preisangaben sind Größenordnungen aus der Werkstattpraxis, keine Festpreise.</div>
+  </div>
+</section>
+
+<!-- III. WAS DRIN IST -->
+<section class="tint">
+  <div class="wrap">
+    <div class="secnum">III.</div>
+    <div class="kick">Was drin ist</div>
+    <h2>Acht Kapitel, hundertneun nummerierte Regeln.</h2>
+    <div class="dek">Sie müssen das Buch nicht von vorn nach hinten lesen. Suchen Sie sich das Kapitel, das zu Ihrem Auto und Ihrem Fahrprofil passt.</div>
+    <div class="chaps">
+      <div class="chap"><div class="n">Kapitel 1 · 15 Regeln</div><h3>Kaltstart und Öl</h3><ul>
+        <li>Muss ein moderner Motor im Stand warmlaufen?</li>
+        <li>Die Temperaturanzeige im Cockpit lügt</li>
+        <li>Lesen Sie die Freigabe, nicht die Viskosität</li>
+        <li>Öladditive aus der Flasche</li>
+        <li>Zu viel Öl ist ungefähr so schädlich wie zu wenig</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 2 · 8 Regeln</div><h3>Das Kurzstreckenproblem</h3><ul>
+        <li>Wie kurz ist zu kurz?</li>
+        <li>Fünf kurze Fahrten kosten mehr als eine lange</li>
+        <li>Die wöchentliche lange Fahrt, die vier Aufgaben erledigt</li>
+        <li>Warum bei Ihnen die Zeit vor dem Kilometerstand greift</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 3 · 17 Regeln</div><h3>Sprit und die Geldmythen</h3><ul>
+        <li>Im Leerlauf ausrollen, um Sprit zu sparen</li>
+        <li>Der Eco-Knopf</li>
+        <li>Superbenzin in einem Auto, das 95 Oktan verlangt</li>
+        <li>Nie nachtanken, wenn die Zapfpistole abgeschaltet hat</li>
+        <li>Der leere Dachträger</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 4 · 9 Regeln</div><h3>Diesel überleben</h3><ul>
+        <li>Ein STEIGENDER Ölstand ist der Alarm</li>
+        <li>Ihr Motoröl ist das, was Ihren Partikelfilter tötet</li>
+        <li>Ein Sensor für 80 Euro kann einen Filter für 2.000 Euro zerstören</li>
+        <li>Fahren Sie einen Diesel niemals leer</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 5 · 12 Regeln</div><h3>Getriebe, Riemen, Kette, Kühlung</h3><ul>
+        <li>Der Zahnriemen ist das sichere System, nicht die Kette</li>
+        <li>Wenig fahren erhöht Ihr Riemenrisiko</li>
+        <li>"Lebensdauerfüllung" heißt nicht, was Sie denken</li>
+        <li>Mehr Frostschutz ist schlechter, nicht besser</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 6 · 16 Regeln</div><h3>Was Autos tötet, bevor der Motor stirbt</h3><ul>
+        <li>Die 12-Volt-Batterie verursacht 45,4 Prozent aller Pannen</li>
+        <li>Eine offene Heckklappe leert manche Autos in fünf Tagen</li>
+        <li>Autos mit wenig Kilometern zerstören ihre Bremsen schneller</li>
+        <li>Die Sechs-Jahres-Regel für Reifen stimmt so nicht</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 7 · 16 Regeln</div><h3>Die ehrlichen Kapitel</h3><ul>
+        <li>Was nichts bringt: die vollständige Liste</li>
+        <li>Die ehrliche Rangfolge, was am meisten bringt</li>
+        <li>Ihre Werkstattrechnung lesen</li>
+        <li>Wann Sie das Auto gehen lassen sollten</li></ul></div>
+      <div class="chap"><div class="n">Kapitel 8 · 16 Regeln</div><h3>Selbst machen und überleben</h3><ul>
+        <li>Ihr Auto selbst auslesen: der OBD2-Stecker</li>
+        <li>Was Sie niemals löschen dürfen</li>
+        <li>Die Warnleuchten, in drei Gruppen sortiert</li>
+        <li>Panne auf der Autobahn</li>
+        <li>Das Auto, das steht</li></ul></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <h2>Bei jedem Eintrag steht, wie sicher die Sache ist</h2><div class="rule"></div>
-    <p>Das ist der Grund, warum Sie mir den Rest glauben können. Ein Buch, das alles behauptet, behauptet nichts.</p>
-    <div class="tags">
-      <span class="tag b">Belegt</span>
-      <span class="tag w">Wahrscheinlich</span>
-      <span class="tag e">Werkstatt-Erfahrung</span>
+<!-- IV. DIE EHRLICHKEIT -->
+<section class="dark">
+  <div class="wrap narrow">
+    <div class="secnum">IV.</div>
+    <div class="kick">Die Ehrlichkeit</div>
+    <h2>Bei jedem Eintrag steht, wie sicher die Sache ist.</h2>
+    <p class="dek">Das ist der Grund, warum Sie mir den Rest glauben können. Ein Buch, das alles behauptet, behauptet nichts.</p>
+    <div class="badges">
+      <span class="badge b">Belegt</span><span class="badge w">Wahrscheinlich</span><span class="badge e">Werkstatt-Erfahrung</span>
     </div>
-    <p><b>Belegt</b> heißt, dass eine Messung oder eine Herstellerangabe dahintersteht. <b>Wahrscheinlich</b> heißt, dass die Begründung solide ist, die Zahlen aber aus der Praxis stammen. <b>Werkstatt-Erfahrung</b> heißt, dass ich Ihnen sage, worauf wir im Betrieb achten, ohne einen Beleg vorlegen zu können.</p>
-    <p>Und wo eine verbreitete Zahl keine Quelle hat, steht das ausdrücklich dabei. Auch dann, wenn die Zahl mir nützen würde.</p>
+    <p style="color:#B4C0CB"><b style="color:#F6F3EC">Belegt</b> heißt, dass eine Messung oder eine Herstellerangabe dahintersteht. <b style="color:#F6F3EC">Wahrscheinlich</b> heißt, dass die Begründung solide ist, die Zahlen aber aus der Praxis stammen. <b style="color:#F6F3EC">Werkstatt-Erfahrung</b> heißt, dass ich Ihnen sage, worauf wir im Betrieb achten, ohne einen Beleg vorlegen zu können.</p>
+    <p style="color:#B4C0CB">Und wo eine verbreitete Zahl keine Quelle hat, steht das ausdrücklich dabei. Auch dann, wenn die Zahl mir nützen würde.</p>
     <div class="quote">Die bekannte Behauptung, 90 Prozent des Verschleißes entstünden beim Kaltstart, lässt sich auf keine Untersuchung zurückführen. Sie verkauft Additive und Kurzintervalle hervorragend. Im Buch steht, warum sie trotzdem falsch ist.</div>
   </div>
 </section>
 
+<!-- V. DIE WERKSTATT -->
 <section>
-  <div class="wrap">
-    <h2>Das Kapitel über die Werkstatt</h2><div class="rule"></div>
-    <p>Geschrieben von dem Mann, der die Rechnung schreibt. Es geht nicht darum, Werkstätten schlecht zu machen. Es geht darum, dass Sie am Tresen wissen, worüber gesprochen wird.</p>
+  <div class="wrap narrow">
+    <div class="secnum">V.</div>
+    <div class="kick">Das Kapitel über die Werkstatt</div>
+    <h2>Damit Sie am Tresen wissen, worüber gesprochen wird.</h2>
+    <p class="dek">Es geht nicht darum, Werkstätten schlecht zu machen. Die meisten Leute verlieren dort kein Geld, weil jemand sie betrügt, sondern weil sie die Begriffe nicht kennen.</p>
     <ul class="checks">
-      <li>Wie Sie eine <b>Werkstattrechnung lesen</b>, und warum Arbeitswerte Vorgabezeit sind und nicht die Zeit, die Ihr Auto dort stand</li>
-      <li>Wie Sie einen Fehler so beschreiben, dass er <b>in einer Stunde gefunden wird statt in dreien</b>. Diagnose wird nach Zeit berechnet</li>
-      <li>Was ein <b>Kostenvoranschlag</b> bindet und was nicht, und wie Sie nach Ihren alten Teilen fragen</li>
-      <li>Wo der höhere Stundensatz einer <b>Vertragswerkstatt</b> wirklich etwas kauft und wo nicht</li>
-      <li>Wann Sie ein Auto <b>gehen lassen</b> sollten, statt weiter zu reparieren</li>
+      <li><b>Wie Sie eine Werkstattrechnung lesen</b>, und warum Arbeitswerte Vorgabezeit aus einer Tabelle sind und nicht die Zeit, die Ihr Auto dort stand</li>
+      <li><b>Wie Sie einen Fehler so beschreiben</b>, dass er in einer Stunde gefunden wird statt in dreien. Die Diagnose wird nach Zeit berechnet</li>
+      <li><b>Was ein Kostenvoranschlag bindet</b> und was nicht, und wie Sie nach Ihren alten Teilen fragen</li>
+      <li><b>Wo der höhere Stundensatz</b> einer Vertragswerkstatt wirklich etwas kauft und wo nicht</li>
+      <li><b>Wann Sie ein Auto gehen lassen</b> sollten, statt weiter zu reparieren</li>
     </ul>
+    <div class="quote" style="font-size:22px">Ich verdiene mein Geld damit, Ihr Auto zu reparieren. In diesem Buch zeige ich Ihnen, wofür Sie mich nicht bezahlen müssen.</div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <h2>Zwei Beigaben, beide zum Ausdrucken</h2><div class="rule"></div>
+<!-- VI. BEIGABEN -->
+<section class="tint">
+  <div class="wrap narrow">
+    <div class="secnum">VI.</div>
+    <div class="kick">Zwei Beigaben</div>
+    <h2>Beide zum Ausdrucken, beide fürs Auto.</h2>
     <div class="bonus">
-      <div><b>Warnleuchten-Notfallblatt</b>Alle Kontrollleuchten in drei Gruppen sortiert: sofort anhalten, vorsichtig zur Werkstatt, oder die Woche zu Ende fahren. Eine Seite, für das Handschuhfach.</div>
-      <div><b>Handschuhfachkarte</b>Die Monats- und Jahresintervalle auf der Vorderseite, die Notfallabläufe auf der Rückseite. Ausdrucken, ausschneiden, ins Auto legen.</div>
+      <div><h3>Warnleuchten-Notfallblatt</h3><p style="margin:0;color:var(--ink2)">Alle Kontrollleuchten in drei Gruppen sortiert: sofort anhalten, vorsichtig zur Werkstatt, oder die Woche zu Ende fahren. Eine Seite fürs Handschuhfach.</p></div>
+      <div><h3>Handschuhfachkarte</h3><p style="margin:0;color:var(--ink2)">Die Monats- und Jahresintervalle auf der Vorderseite, die Notfallabläufe auf der Rückseite. Ausdrucken, ausschneiden, ins Auto legen.</p></div>
     </div>
   </div>
 </section>
 
+<!-- VII. FÜR WEN -->
 <section>
-  <div class="wrap">
-    <h2>Für wen dieses Buch ist</h2><div class="rule"></div>
+  <div class="wrap narrow">
+    <div class="secnum">VII.</div>
+    <div class="kick">Für wen</div>
+    <h2>Ehrlich gesagt, für wen das Buch nicht ist.</h2>
     <div class="who">
-      <div class="yes"><b>Passt</b><ul>
+      <div class="y"><h3>Passt</h3><ul>
         <li>Sie wollen Ihr Auto noch viele Jahre fahren</li>
         <li>VW, Mercedes, BMW, Audi, Opel, Skoda</li>
         <li>Benziner oder Diesel</li>
         <li>Wenig Kilometer und viele kurze Wege</li>
-        <li>Sie wollen am Tresen mitreden können</li>
-      </ul></div>
-      <div class="no"><b>Passt nicht</b><ul>
+        <li>Sie wollen am Tresen mitreden können</li></ul></div>
+      <div class="n"><h3>Passt nicht</h3><ul>
         <li>Sie suchen eine Reparaturanleitung</li>
         <li>Sie wollen eine Garantie auf eine Laufleistung</li>
         <li>Sie erwarten ein Wundermittel aus der Flasche</li>
-        <li>Sie schrauben beruflich und kennen das alles</li>
-      </ul></div>
+        <li>Sie schrauben beruflich und kennen das alles</li></ul></div>
     </div>
-    <div class="honest">
+    <div class="panel">
       <h3>Was dieses Buch nicht ist</h3>
       <p>Keine Reparaturanleitung und kein Ersatz für eine Werkstatt. Arbeiten an Bremsen, Airbags, Kraftstoffanlage und tragenden Teilen gehören in fachkundige Hände, und genau das steht auch so im Buch, mit Begründung.</p>
       <p style="margin-bottom:0">Es gibt keine Zusage über eine bestimmte Laufleistung. Was Ihr Auto erreicht, hängt von Fahrzeug, Zustand und Fahrweise ab. Das Buch verbessert Ihre Entscheidungen, nicht Ihr Blech.</p>
@@ -249,42 +394,52 @@ ul.checks li::before{content:"✓";position:absolute;left:2px;top:9px;color:var(
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <h2>Häufige Fragen</h2><div class="rule"></div>
-    <div class="faq">
-      <p><b>Wie bekomme ich das Buch?</b>Sofort nach dem Kauf als PDF zum Herunterladen, zusammen mit den beiden Beigaben. Sie brauchen kein besonderes Programm.</p>
-      <p><b>Passt das zu meinem Auto?</b>Die Einträge sind auf die gängigen Marken und Motoren in Deutschland, Österreich und der Schweiz ausgelegt, Benziner wie Diesel. Wo etwas nur für bestimmte Motoren gilt, steht es dabei.</p>
-      <p><b>Ich schraube nicht selbst. Lohnt sich das trotzdem?</b>Ja. Der größte Teil des Buches sind Entscheidungen, keine Handgriffe: welches Öl, welches Intervall, welche Fahrt, welche Rechnung.</p>
-      <p><b>Muss ich etwas kaufen, damit es wirkt?</b>Nein. Der größte Hebel im ganzen Buch kostet nichts.</p>
-      <p><b>Ist es ein Abo?</b>Nein. Einmalzahlung, 19,99 € inklusive Mehrwertsteuer.</p>
-    </div>
-    <div class="guarantee">
+<!-- VIII. FRAGEN -->
+<section class="tint">
+  <div class="wrap narrow">
+    <div class="secnum">VIII.</div>
+    <div class="kick">Fragen</div>
+    <h2>Was die Leute vorher wissen wollen.</h2>
+    <dl class="faq">
+      <dt>Wie bekomme ich das Buch?</dt>
+      <dd>Sofort nach dem Kauf als PDF zum Herunterladen, zusammen mit den beiden Beigaben. Sie brauchen kein besonderes Programm.</dd>
+      <dt>Passt das zu meinem Auto?</dt>
+      <dd>Die Einträge sind auf die gängigen Marken und Motoren in Deutschland, Österreich und der Schweiz ausgelegt, Benziner wie Diesel. Wo etwas nur für bestimmte Motoren gilt, steht es dabei.</dd>
+      <dt>Ich schraube nicht selbst. Lohnt sich das trotzdem?</dt>
+      <dd>Ja. Der größte Teil des Buches sind Entscheidungen, keine Handgriffe: welches Öl, welches Intervall, welche Fahrt, welche Rechnung.</dd>
+      <dt>Muss ich etwas kaufen, damit es wirkt?</dt>
+      <dd>Nein. Der größte Hebel im ganzen Buch kostet nichts.</dd>
+      <dt>Ist es ein Abo?</dt>
+      <dd>Nein. Einmalzahlung, 19,99 € inklusive Mehrwertsteuer.</dd>
+    </dl>
+    <div class="gpanel">
       <h3>15 Tage Geld zurück</h3>
       <p style="margin-bottom:0">Wenn das Buch Ihnen nichts bringt, bekommen Sie Ihr Geld innerhalb von 15 Tagen zurück. Ohne Begründung, abgewickelt über Hotmart.</p>
     </div>
   </div>
 </section>
 
-<div class="cta-band">
-  <div class="wrap center">
-    <h2>109 Regeln. Eine Entscheidung.</h2>
-    <p style="color:#B9C6D2;margin-bottom:22px">Sofortiger Download · 115 Seiten · 2 Beigaben zum Ausdrucken</p>
-    <div class="price" style="margin-top:0">19,99 €<span class="tag">inkl. MwSt. · einmalig</span></div>
-    <a class="btn" href="https://pay.hotmart.com/V107619143J">Buch jetzt herunterladen<small>Sicherer Checkout über Hotmart · 15 Tage Geld zurück</small></a>
+<section class="dark center">
+  <div class="wrap narrow">
+    <h2 style="font-size:clamp(30px,4.6vw,46px)">Hundertneun Regeln. Eine Entscheidung.</h2>
+    <p class="dek" style="margin:0 auto 26px">Sofortiger Download · 115 Seiten · zwei Beigaben zum Ausdrucken · 15 Tage Geld zurück</p>
+    <div style="font-family:var(--serif);font-size:52px;font-weight:600;line-height:1;margin-bottom:6px">19,99 €</div>
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9AA8B5;margin-bottom:26px">inkl. MwSt. · einmalig · kein Abo</div>
+    <a class="btn gold lg" href="https://pay.hotmart.com/V107619143J">Buch jetzt herunterladen</a>
+    <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#7D8B98;margin-top:18px">Sicherer Checkout über Hotmart</div>
   </div>
-</div>
+</section>
 
 <div class="foot">
-  <div class="wrap">
-    <p>Dieses Buch ersetzt keine Untersuchung und keine Reparatur durch eine Fachwerkstatt. Sicherheitsrelevante Arbeiten an Bremsen, Airbags, Kraftstoffanlage, Lenkung und tragenden Teilen gehören in fachkundige Hände. Preisangaben und rechtliche Hinweise geben den Stand der Drucklegung wieder.</p>
-    <p style="margin-bottom:0">Abwicklung und Auslieferung über Hotmart. Bei Fragen zum Produkt: <a href="mailto:milomaticltd@gmail.com">milomaticltd@gmail.com</a></p>
+  <div class="wrap narrow">
+    <p>Dieses Buch ersetzt keine Untersuchung und keine Reparatur durch eine Fachwerkstatt. Sicherheitsrelevante Arbeiten an Bremsen, Airbags, Kraftstoffanlage, Lenkung und tragenden Teilen gehören in fachkundige Hände. Preisangaben im Buch und auf dieser Seite sind Größenordnungen und geben den Stand der Drucklegung wieder.</p>
+    <p style="margin-bottom:0">Abwicklung und Auslieferung über Hotmart. Fragen zum Produkt: <a href="mailto:milomaticltd@gmail.com">milomaticltd@gmail.com</a></p>
   </div>
 </div>
 
 <script>
 var SRC = new URLSearchParams(location.search).get('src') || 'direct';
-document.querySelectorAll('a.btn').forEach(function(a){
+document.querySelectorAll('a.btn[href^="https://pay.hotmart.com"]').forEach(function(a){
   a.href = a.href + (a.href.indexOf('?') > -1 ? '&' : '?') + 'src=' + encodeURIComponent(SRC);
 });
 </script>
