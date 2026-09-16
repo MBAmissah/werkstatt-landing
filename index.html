@@ -451,10 +451,39 @@ ul.checks li::before{content:"→";position:absolute;left:0;top:12px;color:var(-
 </div>
 
 <script>
-var SRC = new URLSearchParams(location.search).get('src') || 'direct';
-document.querySelectorAll('a.btn[href^="https://pay.hotmart.com"]').forEach(function(a){
-  a.href = a.href + (a.href.indexOf('?') > -1 ? '&' : '?') + 'src=' + encodeURIComponent(SRC);
-});
+(function(){
+  var W='https://klaus-stats.milomatic.workers.dev';
+  var K='wk_sid', sid=null;
+  try{ sid=sessionStorage.getItem(K); }catch(e){}
+  var fresh=!sid;
+  if(!sid){ sid=Math.random().toString(36).slice(2,10)+Date.now().toString(36); try{sessionStorage.setItem(K,sid);}catch(e){} }
+  var src=(new URLSearchParams(location.search).get('src')||'direct').slice(0,32);
+
+  function send(ev){
+    try{
+      var body=JSON.stringify({sid:sid,ev:ev,src:src,path:location.pathname,ref:document.referrer});
+      if(navigator.sendBeacon){ navigator.sendBeacon(W+'/e', new Blob([body],{type:'text/plain'})); }
+      else { fetch(W+'/e',{method:'POST',body:body,keepalive:true}); }
+    }catch(e){}
+  }
+  if(fresh) send('session');
+  send('view');
+
+  var buys=document.querySelectorAll('a.btn[href^="https://pay.hotmart.com"]');
+  /* default: direct Hotmart link with the src tag, so a sale never depends on the counter */
+  buys.forEach(function(a){ a.href = a.href + (a.href.indexOf('?')>-1?'&':'?') + 'src=' + encodeURIComponent(src); });
+  /* only route through /go once the counter answers */
+  try{
+    fetch(W+'/health',{mode:'no-cors',cache:'no-store'}).then(function(){
+      buys.forEach(function(a){ a.href = W+'/go?sid='+encodeURIComponent(sid)+'&src='+encodeURIComponent(src); });
+    }).catch(function(){});
+  }catch(e){}
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a.btn[href*="hotmart"], a.btn[href*="workers.dev/go"]');
+    if(a) send('atc');
+  },true);
+})();
 </script>
 </body>
 </html>
